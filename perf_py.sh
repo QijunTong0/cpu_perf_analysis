@@ -1,1 +1,1 @@
-sudo perf stat -e "cycles,instructions,L1-dcache-load,L1-dcache-load-misses,branch-misses" python3 $1
+sudo perf stat -e "task-clock,cycles,instructions,L1-dcache-load,L1-dcache-load-misses,branch-misses" python3 src/$1
